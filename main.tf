@@ -33,12 +33,12 @@ provider "aws" {
   region  = var.AWS_REGION
 }
 
-resource "aws_s3_bucket" "poiug" {
+resource "aws_s3_bucket" "poiugvordt" {
   provider = aws.source
-  bucket = "awretu"
+  bucket = "awretuvordt"
 
   tags = {
-    Name        = "eware"
+    Name        = "ewarevordt"
   }
 }
 
