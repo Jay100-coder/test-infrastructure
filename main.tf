@@ -14,9 +14,23 @@ terraform {
  }
 }
 
+variable "AWS_REGION" {
+  type = string
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  type = string
+  sensitive = true
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type = string
+  sensitive = true
+}
+
 provider "aws" {
   alias   = "source"
-  region  = "us-east-1"
+  region  = var.AWS_REGION
 }
 
 resource "aws_s3_bucket" "poiug" {
@@ -27,3 +41,5 @@ resource "aws_s3_bucket" "poiug" {
     Name        = "eware"
   }
 }
+
+
