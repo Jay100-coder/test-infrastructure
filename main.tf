@@ -19,11 +19,11 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_s3_bucket" "poiugyvhjbkjhcdxkhwer" {
+resource "aws_s3_bucket" "poiug" {
   provider = aws.source
-  bucket = "awretujgfbsdvwertuygfsgytu"
+  bucket = "awretu"
 
   tags = {
-    Name        = "ewaretsyhutkgmfndbvsrte"
+    Name        = "eware"
   }
 }
